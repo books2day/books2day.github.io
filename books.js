@@ -102,11 +102,11 @@ function create_book_layout(book_title, book_img, book_text) {
     img_group.setAttribute("class", "img-group");
     //Create the link1
     var link1 = document.createElement("a");
-    link1.setAttribute("href", `https://ipfs.io/ipfs/${book_text}`);
+    link1.setAttribute("href", `https://gateway.pinata.cloud/ipfs/${book_text}`);
     //Create the img
     var img = document.createElement("img");
     img.setAttribute("class", "img-fluid");
-    img.setAttribute("src", `https://ipfs.io/ipfs/${book_img}`);
+    img.setAttribute("src", `https://gateway.pinata.cloud/ipfs/${book_img}`);
     //Create the title for book
     var title = document.createElement("div");
     title.setAttribute("style", "height:60px;overflow: hidden; text-overflow: ellipsis;");
@@ -115,7 +115,7 @@ function create_book_layout(book_title, book_img, book_text) {
     //Create the link2
     var link2 = document.createElement('a');
     link2.setAttribute("class","links");
-    link2.setAttribute("href", `https://ipfs.io/ipfs/${book_text}`);
+    link2.setAttribute("href", `https://gateway.pinata.cloud/ipfs/${book_text}`);
     link2.innerHTML = book_title;
 
     //Appending everything in the right order
