@@ -97,7 +97,7 @@ function create_book_layout(book_title, book_img, book_text) {
     //row.setAttribute("class", "row");
     //Create the col
     var col = document.createElement("div");
-    col.setAttribute("class", "col-lg-2 col-md-3 col-sm-4 col-xs-5 col-5 mx-sm-0 mx-auto");
+    col.setAttribute("class", "col-lg-2 col-md-3 col-sm-4 col-xs-5 col-5 mx-sm-0 mx-auto mt-auto");
     //Create the thumbnail
     var thumbnail= document.createElement("div");
     thumbnail.setAttribute("class", "thumbnail text-center");
