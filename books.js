@@ -108,6 +108,7 @@ function create_book_layout(book_title, book_img, book_text) {
     //Create the link1
     var link1 = document.createElement("a");
     link1.setAttribute("href", `https://gateway.pinata.cloud/ipfs/${book_text}`);
+    link1.setAttribute("target", "_blank");
     //Create the img
     var img = document.createElement("img");
     img.setAttribute("class", "img-fluid");
@@ -121,6 +122,7 @@ function create_book_layout(book_title, book_img, book_text) {
     var link2 = document.createElement('a');
     link2.setAttribute("class","links");
     link2.setAttribute("href", `https://gateway.pinata.cloud/ipfs/${book_text}`);
+    link2.setAttribute("target", "_blank");
     link2.innerHTML = book_title;
 
     //Appending everything in the right order
