@@ -20,6 +20,8 @@ function load_page() {
     ///////////////////
     async function load_books() {
 
+        document.querySelector("#spinner").style.display = "block";
+
         //Initiate web3 instance
         web3 = new Web3("https://rinkeby.infura.io/v3/7ec28e58b24e4996a5d49b71e781a3b4");//http://localhost:7545");//
 
@@ -32,6 +34,9 @@ function load_page() {
             console.log(all_books[x][0], all_books[x][1], all_books[x][2])
             create_book_layout(all_books[x][0], all_books[x][1], all_books[x][2])
         }
+
+        document.querySelector("#spinner").style.display = "none";
+
     }
 
 
