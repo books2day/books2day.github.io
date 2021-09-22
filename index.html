@@ -33,17 +33,20 @@
 
                     <ul class="navbar-nav me-auto p-0 m-0" id="navbarFoldout">
                         <li class="nav-item no-login-view" id="no-login-view1">
-                            <a id="feed" class="nav-link active navbarFoldout-links" aria-current="page" href="{% url 'home' %}">All Books</a>
+                            <a id="feed" class="nav-link active navbarFoldout-links" aria-current="page" href="#">All Books</a>
                         </li>
                         <li class="nav-item no-login-view" id="no-login-view1">
-                            <a id="upload" class="nav-link active navbarFoldout-links" aria-current="page" href="{% url 'home' %}" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Upload</a>
+                            <a id="upload" class="nav-link active navbarFoldout-links" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Upload</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <button class="btn btn-light" id="delete" type="submit">Delete Last Book</button>
+                            </ul>
+                          </li>
                     </ul>
-
-                    <form class="d-flex ms-auto">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-light" id="search" type="submit">Search</button>
-                      </form>
                         
 
                 </div>
