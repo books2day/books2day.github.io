@@ -135,7 +135,7 @@ function create_book_layout(book_title, book_img, book_text) {
     //Create the img
     var img = document.createElement("img");
     img.setAttribute("class", "img-fluid");
-    img.setAttribute("src", `https://gateway.pinata.cloud/ipfs/${book_img}`);
+    img.setAttribute("src", `https://ipfs.io/ipfs/${book_img}`);
     //Create the title for book
     var title = document.createElement("div");
     title.setAttribute("style", "height:60px;overflow: hidden; text-overflow: ellipsis;");
